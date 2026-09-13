@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dwivuj International Ltd.</title>
+  <meta name="description" content="Dwivuj International Ltd. — Import, trading and business solutions in Bangladesh.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a class="logo" href="#home">DWIVUJ <span>INTERNATIONAL</span></a>
+      <button class="menu" onclick="toggleMenu()">☰</button>
+      <div id="navLinks" class="links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">IMPORT • TRADING • BUSINESS</p>
+        <h1>Connecting Global Products<br><span>with Bangladesh.</span></h1>
+        <p class="lead">Dwivuj International Ltd. is a Bangladesh-based business focused on reliable sourcing, importing and distribution of quality products.</p>
+        <div class="buttons">
+          <a class="btn primary" href="#products">Explore Products</a>
+          <a class="btn secondary" href="#contact">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-head">
+        <p class="eyebrow">ABOUT US</p>
+        <h2>Built for long-term business.</h2>
+      </div>
+      <div class="about-grid">
+        <div>
+          <p>Dwivuj International Ltd. works to build dependable international sourcing and trading relationships, bringing suitable products from global markets to Bangladesh.</p>
+          <p>Our approach is simple: authentic products, reliable partners, competitive sourcing and professional service.</p>
+        </div>
+        <div class="card">
+          <h3>Our Vision</h3>
+          <p>To become a trusted and diversified international trading company in Bangladesh.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="section light">
+      <div class="section-head">
+        <p class="eyebrow">OUR PRODUCTS</p>
+        <h2>Selected products for the Bangladesh market.</h2>
+      </div>
+      <div class="cards">
+        <div class="product"><div class="icon">01</div><h3>Automotive Parts</h3><p>Bus, truck and private vehicle parts sourced from international suppliers.</p></div>
+        <div class="product"><div class="icon">02</div><h3>Industrial Products</h3><p>Practical products for businesses, workshops and industrial applications.</p></div>
+        <div class="product"><div class="icon">03</div><h3>General Trading</h3><p>Import and distribution of selected products based on market demand.</p></div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="section-head">
+        <p class="eyebrow">WHAT WE DO</p>
+        <h2>Professional trading support.</h2>
+      </div>
+      <div class="cards">
+        <div class="service"><h3>Global Sourcing</h3><p>Finding suitable overseas suppliers and products.</p></div>
+        <div class="service"><h3>Import & Supply</h3><p>Supporting the flow of products into the Bangladesh market.</p></div>
+        <div class="service"><h3>Distribution</h3><p>Connecting quality products with local customers and businesses.</p></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div>
+        <p class="eyebrow">GET IN TOUCH</p>
+        <h2>Let's build a strong partnership.</h2>
+        <p>For business, sourcing and partnership inquiries, contact us.</p>
+      </div>
+      <div class="contact-card">
+        <p><strong>Md. Amanullah (Aman)</strong><br>Chairman</p>
+        <p>📞 01327716269<br>✉️ amanovi268@gmail.com</p>
+        <p><strong>Head Office:</strong><br>Arappur Bus Stand, Jhenaidah Sadar, Jhenaidah</p>
+        <p><strong>Dhaka Branch:</strong><br>Dhanmondi-19, Madhubazar, Dhaka</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Dwivuj International Ltd. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("show");
+    }
+  </script>
+</body>
+</html>

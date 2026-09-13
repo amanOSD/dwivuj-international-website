@@ -1,0 +1,22 @@
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:#17202a;line-height:1.6;background:#fff}
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);border-bottom:1px solid #e8ecef}
+.nav{max-width:1120px;margin:auto;height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 24px}
+.logo{font-weight:800;letter-spacing:1.5px;color:#15202b;text-decoration:none;font-size:19px}.logo span{font-weight:400}
+.links{display:flex;gap:28px}.links a{color:#34404b;text-decoration:none;font-size:14px;font-weight:600}.links a:hover{color:#0d6b58}
+.menu{display:none;border:0;background:none;font-size:26px}
+.hero{min-height:650px;display:flex;align-items:center;background:linear-gradient(120deg,#f4faf8,#fff 60%,#eef7f4)}
+.hero-content{max-width:1120px;width:100%;margin:auto;padding:80px 24px}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:2px;color:#0d765f;margin-bottom:14px}
+h1{font-size:clamp(42px,6vw,72px);line-height:1.05;letter-spacing:-2px;margin-bottom:24px}h1 span{color:#0d765f}
+.lead{max-width:650px;font-size:18px;color:#59636c}
+.buttons{display:flex;gap:14px;margin-top:34px}.btn{display:inline-block;padding:13px 22px;border-radius:7px;text-decoration:none;font-weight:700}.primary{background:#0d765f;color:#fff}.secondary{border:1px solid #b8c2c7;color:#24313a}
+.section{max-width:1120px;margin:auto;padding:90px 24px}.light{max-width:none;background:#f6f8f8;padding-left:max(24px,calc((100% - 1072px)/2));padding-right:max(24px,calc((100% - 1072px)/2))}
+.section-head{max-width:700px;margin-bottom:40px}h2{font-size:38px;line-height:1.15;letter-spacing:-1px;margin-bottom:10px}
+.about-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:40px;font-size:17px}.about-grid p{margin-bottom:14px}
+.card,.product,.service,.contact-card{border:1px solid #e2e7e8;background:#fff;border-radius:12px;padding:28px}.card h3,.product h3,.service h3{margin-bottom:8px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.product,.service{min-height:190px}.icon{font-size:12px;color:#0d765f;font-weight:800;letter-spacing:1px;margin-bottom:30px}
+.contact{display:grid;grid-template-columns:1.3fr 1fr;gap:50px;align-items:center}.contact h2{margin-bottom:18px}.contact-card{line-height:1.8}
+footer{text-align:center;padding:28px;background:#17202a;color:#dbe1e4;font-size:13px}
+@media(max-width:760px){.links{display:none;position:absolute;top:76px;left:0;right:0;background:#fff;padding:20px 24px;flex-direction:column;gap:15px;border-bottom:1px solid #ddd}.links.show{display:flex}.menu{display:block}.hero{min-height:590px}.about-grid,.cards,.contact{grid-template-columns:1fr}h2{font-size:31px}.section{padding-top:65px;padding-bottom:65px}}
